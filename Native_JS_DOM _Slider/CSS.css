@@ -1,0 +1,45 @@
+.item {
+    position: relative;
+    cursor: pointer;
+}
+
+.item-caption {
+    position: absolute;
+    background-color: azure;
+    bottom: 10px;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    padding: 3px;
+
+}
+
+.lightBoxContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+
+
+}
+
+.LightBox {
+    width: 45%;
+    height: 500px;
+    background-image: url(./image/1.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.LightBox i {
+    cursor: pointer;
+}
+
+#close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+}
