@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container py-5  ">
+        <h3 class="fw-bolder">Product Managment System</h3>
+
+        <label for="prodctNameInput"> Product Name:</label>
+        <input type="text" oninput="validation();" class="form-control mb-2 mt-2 " id="prodctNameInput">
+
+        <label for="prodctPriceInput"> Product Price:</label>
+        <input type="number" class="form-control mb-2 mt-2" id="prodctPriceInput">
+
+        <label for="prodctCategoryInput"> Product Category:</label>
+        <input type="text" class="form-control mb-2 mt-2" id="prodctCategoryInput">
+
+        <label for="prodctDescriptionInput"> Product Description:</label>
+        <textarea type="text" class="form-control mb-5 mt-2 w-100" id="prodctDescriptionInput"></textarea>
+
+        <button type="button" onclick="addProduct();" class="btn btn-outline-primary btn-lg" id="addBtn">Add
+            Product</button>
+        <button type="button" class="btn btn-outline-warning btn-lg d-none" id="UpdateBtn">Update Product</button>
+
+    </div>
+
+
+    <div class="mx-auto w-75 p-5">
+        <label for="searchBox"> Search Box:</label>
+        <input type="text" oninput="searchProduct(this.value)" class="form-control mb-2 mt-2"
+            placeholder="Search By Product Name" id="searchBox">
+    </div>
+
+
+
+    <table class="table w-75 mx-auto">
+        <thead>
+            <th>Index</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Category</th>
+            <th>Product Description</th>
+            <th>Update</th>
+            <th>Delete</th>
+
+        </thead>
+        <tbody id="tableBody">
+
+
+
+
+
+        </tbody>
+
+
+
+    </table>
+
+    <script src="JS_main.js"></script>
+</body>
+
+</html>
